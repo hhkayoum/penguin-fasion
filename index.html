@@ -12,6 +12,12 @@
                   extend: {
                     colors: {
                       clifford: '#da373d',
+                    'custom-color': '#A4BC46',
+                    'custom-color-2':'#FABE4C',
+                    'background': '#FFFBF0',
+                    'button-color':' #A4BC46 ',
+                    'img-bck': '#dddd',
+                      
                     }
                   }
                 }
@@ -19,6 +25,100 @@
             </script>
 </head>
 <body>
-       
+  <header class="bg-background mb-25">
+     <nav class="px-5  lg:px-20">
+        <div class="navbar ">
+          <div class="flex-1">
+            <div class="dropdown">
+              <label tabindex="0" class="btn btn-ghost lg:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+              </label>
+              <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 font-medium">
+                <li><a>Home</a></li>
+                <li><a>Product</a></li>
+                <li><a>About Us</a></li>
+                <li><a>Contact Us</a></li>
+              </ul>
+            </div>
+            <!-- <a class="btn btn-ghost normal-case lg:text-4xl  text-xl"><span class="text-custom-color font-bold">Penguin</span>Fashion</a> -->
+            <img class="w-1/4" src="./icons/logo.png" alt="">
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1 font-medium">
+              <li><a>Home</a></li>
+              <li><a>Product</a></li>
+              <li><a>About Us</a></li>
+              <li><a>Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+     </nav>
+     <div class="hero min-h-screen  px-5  lg:px-20 ">
+      <div class="hero-content flex-col lg:flex-row-reverse gap-10">
+        <img class="flex-1" src="./images/model.png" class="max-w-sm rounded-lg shadow-2xl" />
+        <div class="flex-1">
+          <h1 class="text-5xl font-bold"><span class="text-custom-color-2">Be the Penguins
+          </span><br>  of Winter</h1>
+          <p class="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+          <button 
+          class="btn bg-button-color text-white">
+          <img class="w-[30px]"  src="./icons/shopping-cart 1.png" alt="">
+          BUY NOW</button>
+        </div>
+      </div>
+    </div>
+ </header>
+ <main class="px-5 lg:my-20  lg:px-20">
+  <section>
+    <h1 class="text-5xl my-10">WOMEN JACKET</h1>
+    <div class="grid  lg:grid-cols-3 gap-7">
+      <div class="card bg-base-100 shadow-xl">
+        <figure><img class="w-[80%] bg-img-bck p-3"  src="./images/jacket-1.png" alt="jacket" /></figure>
+        <div class="card-body">
+          <h2 class="card-title">Yellow Coat Jacket </h2>
+          <p>Lorem Ipsum is simply dummy text of the 
+            printing and typesetting industry.</p>
+          <div class="card-actions flex justify-between">
+            <h3 class="text-custom-color-2 text-3xl font-medium">$234</h3>
+            <button 
+              class="btn bg-button-color text-white">
+              <img class="w-[30px]"  src="./icons/shopping-cart 1.png" alt="">
+              BUY NOW</button>
+          </div>
+        </div>
+      </div>
+      <div class="card bg-base-100 shadow-xl">
+        <figure><img class="w-[80%] bg-img-bck p-3"   src="./images/jacket-2.png" alt="jacket" /></figure>
+        <div class="card-body">
+          <h2 class="card-title">Yellow Coat Jacket </h2>
+          <p>Lorem Ipsum is simply dummy text of the 
+            printing and typesetting industry.</p>
+          <div class="card-actions flex justify-between">
+            <h3 class="text-custom-color-2 text-3xl font-medium">$234</h3>
+            <button 
+              class="btn bg-button-color text-white">
+              <img class="w-[30px] "  src="./icons/shopping-cart 1.png" alt="">
+              BUY NOW</button>
+          </div>
+        </div>
+      </div>
+      <div class="card bg-base-100 shadow-xl">
+        <figure><img class="w-[80%] bg-img-bck p-3"   src="./images/jacket-3.png" alt="jacket" /></figure>
+        <div class="card-body">
+          <h2 class="card-title">Yellow Coat Jacket </h2>
+          <p>Lorem Ipsum is simply dummy text of the 
+            printing and typesetting industry.</p>
+          <div class="card-actions flex justify-between">
+            <h3 class="text-custom-color-2 text-3xl font-medium">$234</h3>
+            <button 
+              class="btn bg-button-color text-white">
+              <img class="w-[30px]"  src="./icons/shopping-cart 1.png" alt="">
+              BUY NOW</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+ </main>
 </body>
 </html>
